@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.side-bar {
+    border: 1px solid black;
+    width: 480px;
+    height: 83vh;
+    font-weight: 500;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.side-bar ul {
+    padding: 0;
+    list-style: none; /* Remove bullets */
+}
+
+.side-bar ul li {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contents{
+    height: 83vh;
+    border: 1px solid black;
+}
+
+.genomics {
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    background-image: url('../../Assets/Genomics.svg'); /* Add your image path here */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+}
+
+.items {
+    width: 30%; /* Adjust as needed */
+    height: 78%; /* Adjust as needed */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    position: relative;
+    border: 1px solid black;
+    margin: 40px;
+}
+
+.image {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    height: 230px; /* Adjust as needed */
+    overflow: hidden; /* Ensures content stays within the container */
+}
+
+.image img {
+    width: 100%; /* The image takes up the full width of the container */
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; /* Adjust the height of the gradient as needed */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)); /* Black gradient */
+    /* padding: 10px; */
+}
+
+.image p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-left: 15px;
+    /* text-align: center;   */
+}
+
+.image .title {
+    bottom: 30px; /* Space from the bottom for the main title */
+    font-size: 24px;
+    font-weight: bold; /* Make the title stand out */
+}
+
+.image .subtitle {
+    bottom: 10px; /* Space from the bottom for the subtitle */
+    font-size: 18px; /* Slightly smaller size for subtitle */
+}
+
+.description {
+    padding-top: 5px;
+    padding-left: 8px;
+    height: 48%;
+    background-color: white;
+}
+
+.description>div{
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+}
+
+.description{
+}
+
+.description>div img{
+    width: 100%; /* The image takes up the full width of the container */
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+

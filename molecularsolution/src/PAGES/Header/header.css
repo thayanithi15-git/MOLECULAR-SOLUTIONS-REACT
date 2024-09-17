@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Vertically centers the content */
+    padding: 0px 20px;
+    border: 1px solid black;
+  }
+  
+  .logo img {
+    margin-left: 20px;
+    height: 70px; /* Set the height of the logo */
+    margin: 20px;
+  }
+  
+  .nav-bar ul {
+    display: flex;
+    gap: 40px;
+    margin-right: 200px; /* Adjust this to move the nav-bar inward */
+    letter-spacing: 2px;
+  }
+  
+  .nav-bar ul li {
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    cursor: pointer; /* Add a cursor pointer to make it look clickable */
+  }
+  
